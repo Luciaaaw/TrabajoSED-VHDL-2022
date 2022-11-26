@@ -1,0 +1,92 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sat Nov 26 18:25:54 2022
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    14 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |           10 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              49 |           19 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              16 |            5 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+--------------------------------+------------------------------------------------+------------------+----------------+--------------+
+|               Clock Signal              |          Enable Signal         |                Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------+--------------------------------+------------------------------------------------+------------------+----------------+--------------+
+|  GestorDisplay1/Inst_clk10khz/clk_10khz |                                | GestorDisplay1/FSM_sequential_flag_reg[1]_0[0] |                1 |              1 |         1.00 |
+|  GestorDisplay1/Inst_clk10khz/clk_10khz |                                | GestorDisplay1/refrescar_anodo[7]_i_1_n_0      |                1 |              1 |         1.00 |
+|  GestorEntradas1/EDGEDTCTR1/B_L_aux     |                                | GestorEntradas1/EDGEDTCTR5/sreg_reg[2]_0       |                1 |              1 |         1.00 |
+|  GestorEntradas1/EDGEDTCTR4/B_D_aux     |                                | GestorEntradas1/EDGEDTCTR5/sreg_reg[1]_0       |                1 |              1 |         1.00 |
+|  GestorDisplay1/Inst_clk10khz/clk_10khz |                                | GestorDisplay1/FSM_sequential_flag_reg[1]_0[1] |                2 |              4 |         2.00 |
+|  GestorDisplay1/Inst_clk10khz/clk_10khz |                                | GestorDisplay1/flag[2]                         |                3 |              4 |         1.33 |
+|  Modo_Crono1/Inst_clk1hz/CLK            | Modo_Crono1/dec_min[3]_i_1_n_0 | Modo_Crono1/Reset_s                            |                1 |              4 |         4.00 |
+|  Modo_Crono1/Inst_clk1hz/CLK            | Modo_Crono1/unit_min0          | Modo_Crono1/Reset_s                            |                1 |              4 |         4.00 |
+|  Modo_Crono1/Inst_clk1hz/CLK            | Modo_Crono1/Start_s            | Modo_Crono1/Reset_s                            |                2 |              4 |         2.00 |
+|  Modo_Crono1/Inst_clk1hz/CLK            | Modo_Crono1/dec_sec0           | Modo_Crono1/Reset_s                            |                1 |              4 |         4.00 |
+|  GestorDisplay1/Inst_clk10khz/clk_10khz |                                |                                                |                4 |              8 |         2.00 |
+|  CLK_IBUF_BUFG                          |                                | GestorDisplay1/Inst_clk10khz/temp              |                3 |             12 |         4.00 |
+|  CLK_IBUF_BUFG                          |                                |                                                |                6 |             19 |         3.17 |
+|  CLK_IBUF_BUFG                          |                                | Modo_Crono1/Inst_clk1hz/temp                   |                7 |             25 |         3.57 |
++-----------------------------------------+--------------------------------+------------------------------------------------+------------------+----------------+--------------+
+
+
