@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec  5 09:56:33 2022
+# Process ID: 10464
+# Current directory: C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7536 C:\Users\lucia\OneDrive\TRABAJO SED\trabajodefinitivo\trabajodefinitivo.xpr
+# Log file: C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/vivado.log
+# Journal file: C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1

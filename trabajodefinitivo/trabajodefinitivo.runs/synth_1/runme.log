@@ -1,0 +1,447 @@
+
+*** Running vivado
+    with args -log TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4240
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1142.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:19]
+INFO: [Synth 8-3491] module 'GestorEntradas' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:4' bound to instance 'Entradas' of component 'GestorEntradas' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'GestorEntradas' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:22]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Sincronizador' of component 'SYNCHRNZR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SYNCHRNZR.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (1#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SYNCHRNZR.vhd:12]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'DetectorFlanco' of component 'EDGEDTCTR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (2#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/EDGEDTCTR.vhd:12]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Sincronizador2' of component 'SYNCHRNZR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:61]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'DetectorFlanco2' of component 'EDGEDTCTR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:67]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Sincronizador3' of component 'SYNCHRNZR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:73]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'DetectorFlanco3' of component 'EDGEDTCTR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:79]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Sincronizador4' of component 'SYNCHRNZR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:85]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'DetectorFlanco4' of component 'EDGEDTCTR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:91]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Sincronizador5' of component 'SYNCHRNZR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:97]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'DetectorFlanco5' of component 'EDGEDTCTR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:103]
+INFO: [Synth 8-3491] module 'SYNCHRNZR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SYNCHRNZR.vhd:4' bound to instance 'Sincronizador6' of component 'SYNCHRNZR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:109]
+INFO: [Synth 8-3491] module 'EDGEDTCTR' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/EDGEDTCTR.vhd:4' bound to instance 'DetectorFlanco6' of component 'EDGEDTCTR' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'GestorEntradas' (3#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorEntradas.vhd:22]
+INFO: [Synth 8-3491] module 'fsm' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/fsm.vhd:5' bound to instance 'MaquinaEstados' of component 'fsm' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:277]
+INFO: [Synth 8-638] synthesizing module 'fsm' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/fsm.vhd:29]
+INFO: [Synth 8-3491] module 'clk10kHz' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk10kHz.vhd:4' bound to instance 'Inst_clk10khz' of component 'clk10khz' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/fsm.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'clk10kHz' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk10kHz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clk10kHz' (4#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk10kHz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'fsm' (5#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/fsm.vhd:29]
+INFO: [Synth 8-3491] module 'cronometro' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:5' bound to instance 'Modo_Cronometro' of component 'cronometro' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'cronometro' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:26]
+INFO: [Synth 8-3491] module 'clk1Hz' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk1Hz.vhd:4' bound to instance 'Inst_clk1hz' of component 'clk1hz' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'clk1Hz' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk1Hz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clk1Hz' (6#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk1Hz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'cronometro' (7#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:26]
+INFO: [Synth 8-3491] module 'temporizador' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:5' bound to instance 'Modo_Temporizador' of component 'temporizador' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'temporizador' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:26]
+INFO: [Synth 8-3491] module 'SetCuenta' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SetCuenta.vhd:5' bound to instance 'SetCuenta1' of component 'SetCuenta' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'SetCuenta' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SetCuenta.vhd:22]
+INFO: [Synth 8-3491] module 'clk10kHz' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk10kHz.vhd:4' bound to instance 'Inst_clk10khz' of component 'clk10khz' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SetCuenta.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'SetCuenta' (8#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SetCuenta.vhd:22]
+INFO: [Synth 8-3491] module 'CuentaAtras' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:7' bound to instance 'Cuenta_atras1' of component 'CuentaAtras' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'CuentaAtras' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:24]
+INFO: [Synth 8-3491] module 'clk1Hz' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk1Hz.vhd:4' bound to instance 'Inst_clk1hz' of component 'clk1hz' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:41]
+WARNING: [Synth 8-614] signal 'code1_in' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:65]
+WARNING: [Synth 8-614] signal 'code2_in' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:65]
+WARNING: [Synth 8-614] signal 'code3_in' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:65]
+WARNING: [Synth 8-614] signal 'code4_in' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'CuentaAtras' (9#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:24]
+INFO: [Synth 8-3491] module 'MuxTemp' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:5' bound to instance 'Mux_Temp1' of component 'MuxTemp' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'MuxTemp' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:24]
+WARNING: [Synth 8-614] signal 'code1_Sel' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:27]
+WARNING: [Synth 8-614] signal 'code2_Sel' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:27]
+WARNING: [Synth 8-614] signal 'code3_Sel' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:27]
+WARNING: [Synth 8-614] signal 'code4_Sel' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:27]
+WARNING: [Synth 8-614] signal 'code1_Count' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:27]
+WARNING: [Synth 8-614] signal 'code2_Count' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:27]
+WARNING: [Synth 8-614] signal 'code3_Count' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:27]
+WARNING: [Synth 8-614] signal 'code4_Count' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'MuxTemp' (10#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/MuxTemp.vhd:24]
+WARNING: [Synth 8-614] signal 'Enable_sel' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'temporizador' (11#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:26]
+INFO: [Synth 8-3491] module 'ajedrez' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/ajedrez.vhd:5' bound to instance 'Modo_Ajedrez' of component 'ajedrez' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:334]
+INFO: [Synth 8-638] synthesizing module 'ajedrez' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/ajedrez.vhd:25]
+INFO: [Synth 8-3491] module 'CuentaAtras' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:7' bound to instance 'JugadorA' of component 'CuentaAtras' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/ajedrez.vhd:57]
+INFO: [Synth 8-3491] module 'CuentaAtras' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:7' bound to instance 'JugadorB' of component 'CuentaAtras' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/ajedrez.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ajedrez' (12#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/ajedrez.vhd:25]
+INFO: [Synth 8-3491] module 'mux' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:4' bound to instance 'Mux1' of component 'mux' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:353]
+INFO: [Synth 8-638] synthesizing module 'mux' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:58]
+WARNING: [Synth 8-614] signal 'code1_A' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code2_A' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code3_A' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code4_A' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code5_A' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code6_A' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code7_A' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code8_A' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code1_B' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code2_B' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code3_B' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code4_B' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code5_B' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code6_B' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code7_B' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code8_B' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code1_C' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code2_C' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code3_C' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code4_C' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code5_C' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code6_C' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code7_C' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code8_C' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code1_ME' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code2_ME' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code3_ME' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code4_ME' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code5_ME' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code6_ME' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code7_ME' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+WARNING: [Synth 8-614] signal 'code8_ME' is read in the process but is not in the sensitivity list [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'mux' (13#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:58]
+INFO: [Synth 8-3491] module 'GestorDisplay' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:5' bound to instance 'Display' of component 'GestorDisplay' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:406]
+INFO: [Synth 8-638] synthesizing module 'GestorDisplay' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:24]
+INFO: [Synth 8-3491] module 'clk10kHz' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/clk10kHz.vhd:4' bound to instance 'Inst_clk10khz' of component 'clk10khz' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:55]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:6' bound to instance 'Inst_deco1' of component 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (14#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:13]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:6' bound to instance 'Inst_deco2' of component 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:65]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:6' bound to instance 'Inst_deco3' of component 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:69]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:6' bound to instance 'Inst_deco4' of component 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:73]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:6' bound to instance 'Inst_deco5' of component 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:77]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:6' bound to instance 'Inst_deco6' of component 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:81]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:6' bound to instance 'Inst_deco7' of component 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:85]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/decoder.vhd:6' bound to instance 'Inst_deco8' of component 'decoder' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'GestorDisplay' (15#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/GestorDisplay.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (16#1) [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/top.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1142.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1142.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1142.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1142.918 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lucia/OneDrive/TRABAJO SED/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/lucia/OneDrive/TRABAJO SED/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/lucia/OneDrive/TRABAJO SED/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1177.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1177.684 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'estadoActual_reg' in module 'fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'estadoActual_reg' in module 'temporizador'
+INFO: [Synth 8-802] inferred FSM for state register 'count_reg' in module 'GestorDisplay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      cs |                              000 |                              000
+                      as |                              001 |                              010
+                      ts |                              010 |                              001
+                 iSTATE0 |                              011 |                              100
+                 iSTATE1 |                              100 |                              101
+                  iSTATE |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estadoActual_reg' using encoding 'sequential' in module 'fsm'
+WARNING: [Synth 8-327] inferring latch for variable 'code1_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/fsm.vhd:92]
+WARNING: [Synth 8-327] inferring latch for variable 'code8_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/fsm.vhd:99]
+WARNING: [Synth 8-327] inferring latch for variable 'Start_s_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'Reset_s_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'code6_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:111]
+WARNING: [Synth 8-327] inferring latch for variable 'code7_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:110]
+WARNING: [Synth 8-327] inferring latch for variable 'code8_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/cronometro.vhd:109]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_sec_aux_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SetCuenta.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'dec_sec_aux_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SetCuenta.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'unit_min_aux_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SetCuenta.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'dec_min_aux_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/SetCuenta.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'Reset_s_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'Start_s_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/CuentaAtras.vhd:53]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      rp |                            00001 |                              100
+                     sel |                            00010 |                              000
+                       c |                            00100 |                              001
+                       p |                            01000 |                              010
+                       r |                            10000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estadoActual_reg' using encoding 'one-hot' in module 'temporizador'
+WARNING: [Synth 8-327] inferring latch for variable 'code6_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:148]
+WARNING: [Synth 8-327] inferring latch for variable 'code7_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:147]
+WARNING: [Synth 8-327] inferring latch for variable 'code8_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/temporizador.vhd:146]
+WARNING: [Synth 8-327] inferring latch for variable 'Enable_count_A_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/ajedrez.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'Reset_aux_A_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/ajedrez.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Enable_count_B_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/ajedrez.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 'code1_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'code2_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'code3_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 'code4_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'code5_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 'code6_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 'code7_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'code8_reg' [C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.srcs/sources_1/new/mux.vhd:71]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 | 00000000000000000000000000000001
+*
+                 iSTATE6 |                              001 | 00000000000000000000000000000010
+                 iSTATE5 |                              010 | 00000000000000000000000000000011
+                 iSTATE4 |                              011 | 00000000000000000000000000000100
+                 iSTATE3 |                              100 | 00000000000000000000000000000101
+                 iSTATE2 |                              101 | 00000000000000000000000000000110
+                 iSTATE1 |                              110 | 00000000000000000000000000000111
+                 iSTATE0 |                              111 | 00000000000000000000000000001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'count_reg' using encoding 'sequential' in module 'GestorDisplay'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 4     
+	   2 Input   13 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 24    
++---Registers : 
+	               26 Bit    Registers := 4     
+	               13 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 16    
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input   26 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 3     
+	   8 Input    8 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 72    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 33    
+	   6 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|TOP         | Entradas/DetectorFlanco/sreg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP         | Entradas/DetectorFlanco2/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP         | Entradas/DetectorFlanco3/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP         | Entradas/DetectorFlanco4/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP         | Entradas/DetectorFlanco5/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+--------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    10|
+|3     |LUT1   |    19|
+|4     |LUT2   |    47|
+|5     |LUT3   |    40|
+|6     |LUT4   |    87|
+|7     |LUT5   |    56|
+|8     |LUT6   |    93|
+|9     |SRL16E |     5|
+|10    |FDCE   |    62|
+|11    |FDPE   |    19|
+|12    |FDRE   |    71|
+|13    |FDSE   |     8|
+|14    |LD     |    53|
+|15    |LDC    |    21|
+|16    |LDCP   |     2|
+|17    |LDP    |     4|
+|18    |IBUF   |     7|
+|19    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1177.684 ; gain = 34.766
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1177.684 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1177.684 ; gain = 34.766
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1177.684 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1185.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  LD => LDCE: 53 instances
+  LDC => LDCE: 21 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 2 instances
+  LDP => LDPE: 2 instances
+  LDP => LDPE (inverted pins: G): 2 instances
+
+Synth Design complete, checksum: cbf52761
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1185.699 ; gain = 42.781
+INFO: [Common 17-1381] The checkpoint 'C:/Users/lucia/OneDrive/TRABAJO SED/trabajodefinitivo/trabajodefinitivo.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  7 12:04:36 2022...
