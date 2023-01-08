@@ -2,7 +2,7 @@
 Utilización de la placa  Nexys4-DDR para elaborar un cronómetro con dos modos de trabajo en el entorno VIVADO de Xilinx.
 
 ## Cronómetro
-Nuestro proyecto se centra en crear un cronómetro con dos modos distintos de trabajo: uno con cuenta ascendente inicializado a cero, el cual cuenta con tres botones (START, RESET Y PAUSE) mediante los cuales podremos parar y reiniciar el tiempo del mismo; y el segundo modo será con cuenta descendente, por lo que se le podrá fijar un tiempo de inicio a partir del cual el cronómetro inciará la cuenta hasta cero. Este segundo modo también cuenta con distintos botones para cambiar el tiempo y resetear e inicializar la cuenta.
+Nuestro proyecto se centra en crear un cronómetro con dos modos distintos de trabajo: uno con cuenta ascendente inicializado a cero, el cual cuenta con tres botones (START, RESET Y PAUSE) mediante los cuales podremos parar y reiniciar el tiempo del mismo; y el segundo modo será con cuenta descendente, por lo que se le podrá fijar un tiempo de inicio a partir del cual el cronómetro iniciará la cuenta hasta cero. Este segundo modo también cuenta con distintos botones para cambiar el tiempo y resetear e inicializar la cuenta.
 Los números del contador se mostrarán en 2 displays de 7 segmentos cada uno que ya vienen incorporados en la placa. 
 
 ## Componentes
